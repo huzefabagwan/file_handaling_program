@@ -2,3 +2,11 @@
 contains the word ‘twinkle’."""
 
 
+with open("poem.txt" , "r")as f :
+   read_file =  f.read()
+
+if "Twinkle" in read_file:
+   print("yes")
+
+    
+
