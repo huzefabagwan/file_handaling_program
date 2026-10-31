@@ -3,8 +3,24 @@ integer. You need to read a file ‘Hi-score.txt’ which is either blank or con
 Hi-score. You need to write a program to update the Hi-score whenever the game()
 function breaks the Hi-score."""
 
-# def game():
-#     score = 10 
-#     return score
+def game():
+    score = 20 
+    return score
 
-# content = 
+with open("Hi-score.txt", "r")as file:
+    content = file.read()
+
+if content != "":
+    Hi_score = int(content)
+else:
+     Hi_score = 0 
+
+score = game()
+
+if score > Hi_score :
+   with open("Hi-score.txt", "w")as file:
+       file.write(str(f"Hi_Score is {score}"))
+else:
+    with open("Hi-score.txt", "w")as file:
+        file.write(str(f"Hi_Score is {Hi_score}"))
+   
