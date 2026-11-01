@@ -10,7 +10,7 @@ print(reads)
     
 
 
-with open("file1.txt" , "w") as f :
+with open("file.txt" , "w") as f :
     f.write(reads)
 # with open("file1.txt" , "w") as f :
 #     f.read()
